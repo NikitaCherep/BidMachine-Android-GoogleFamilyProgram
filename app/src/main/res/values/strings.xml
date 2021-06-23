@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">BidMachine-GoogleFamilyProgram</string>
+    <string name="test_mode">Test Mode</string>
+    <string name="logging_enable">Logging Enable</string>
+    <string name="coppa">COPPA</string>
+    <string name="gdpr">GDPR</string>
+    <string name="consent">Consent</string>
+    <string name="us_privacy_string">US Privacy String</string>
+    <string name="initialize">Initialize</string>
+    <string name="load_banner">Load Banner</string>
+    <string name="show_banner">Show Banner</string>
+    <string name="load_interstitial">Load Interstitial</string>
+    <string name="show_interstitial">Show Interstitial</string>
+    <string name="load_rewarded">Load Rewarded</string>
+    <string name="show_rewarded">Show Rewarded</string>
+    <string name="load_native">Load Native</string>
+    <string name="show_native">Show Native</string>
+
+</resources>

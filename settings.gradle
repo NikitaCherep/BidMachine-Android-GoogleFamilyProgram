@@ -1,0 +1,3 @@
+rootProject.name = "BidMachine-Android-GoogleFamilyProgram"
+
+include ':app'
