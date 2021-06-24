@@ -64,6 +64,9 @@ class MainActivity : AppCompatActivity() {
         binding.cbTestMode.setOnCheckedChangeListener { _, isChecked ->
             BidMachine.setTestMode(isChecked)
         }
+        binding.cbLoggingEnable.setOnCheckedChangeListener { _, isChecked ->
+            BidMachine.setLoggingEnabled(isChecked)
+        }
         binding.cbCoppa.setOnCheckedChangeListener { _, isChecked ->
             BidMachine.setCoppa(isChecked)
         }
@@ -109,12 +112,12 @@ class MainActivity : AppCompatActivity() {
     private fun initialize() {
         logMessage("initialize")
 
-        BidMachine.setLoggingEnabled(true)
         BidMachine.setTestMode(binding.cbTestMode.isChecked)
+        BidMachine.setLoggingEnabled(binding.cbLoggingEnable.isChecked)
         BidMachine.setCoppa(binding.cbCoppa.isChecked)
         BidMachine.setSubjectToGDPR(binding.cbGdpr.isChecked)
         BidMachine.setConsentConfig(binding.cbConsent.isChecked, null)
-        BidMachine.setUSPrivacyString(binding.etUSPrivacyString.toString())
+        BidMachine.setUSPrivacyString(binding.etUSPrivacyString.text.toString())
 
         BidMachine.initialize(this, BID_MACHINE_SELLER_ID)
     }
